@@ -11,3 +11,4 @@ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
 sudo apt update
 sudo apt-get install terraform
 sudo apt install unzip -y
+sudo apt install openjdk-17-jdk -y
