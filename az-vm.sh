@@ -9,9 +9,9 @@ az network nsg create \
 az network nsg rule create \
 --resource-group AZ \
 --nsg-name AZ-NSG --name AZ_Nsg_Rule --priority 100 \
---source-address-prefixes '*' --source-port-ranges 22 \
+--source-address-prefixes '*' --source-port-ranges '*' \
 --destination-address-prefixes '*' --destination-port-ranges '*' \
---access Allow --protocol Tcp --description "Allowing SSH"
+--access Allow --protocol Tcp --description "Allowing ALL"
 
 for i in `seq 1  `; do
    az vm create \
