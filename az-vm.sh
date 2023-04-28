@@ -23,7 +23,7 @@ for i in `seq 1  `; do
      --vnet-name Vnet \
      --subnet Subnet \
      --nsg AZ-Nsg \
-     --image UbuntuLTS \
+     --image Ubuntu2204 \
      --admin-username master \
      --admin-password "india@123456"
 done
@@ -38,7 +38,7 @@ for i in `seq 1 2  `; do
      --vnet-name Vnet \
      --subnet Subnet \
      --nsg AZ-Nsg \
-     --image UbuntuLTS \
+     --image Ubuntu2204 \
      --admin-username node \
      --admin-password "india@123456"
 done
