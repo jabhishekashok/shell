@@ -16,3 +16,9 @@ steps:
     scriptType: 'bash'
     scriptLocation: 'scriptPath'
     scriptPath: 'kube.sh'
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Pipeline.Workspace)'
+    Contents: '**.kube/config'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
