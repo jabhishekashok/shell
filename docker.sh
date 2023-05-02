@@ -1,4 +1,2 @@
 curl -sSL https://get.docker.com/ | sh
-sudo groupadd docker
-sudo usermod -aG docker node
-newgrp - docker
+sudo chmod 666 /var/run/docker.sock
