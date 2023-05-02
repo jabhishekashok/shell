@@ -15,16 +15,4 @@ steps:
     azureSubscription: 'Azure subscription 1(977812bc-0cfb-4c57-8912-a7804ccf8fba)'
     scriptType: 'bash'
     scriptLocation: 'scriptPath'
-    scriptPath: 'kube.sh'
-
-- task: CopyFiles@2
-  inputs:
-    SourceFolder: '$(Pipeline.Workspace)'
-    Contents: '**.kube/config'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
-
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
-    publishLocation: 'Container'
+    scriptPath: 'az-vm.sh'
