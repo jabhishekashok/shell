@@ -14,5 +14,5 @@ steps:
   inputs:
     azureSubscription: 'Azure subscription 1(977812bc-0cfb-4c57-8912-a7804ccf8fba)'
     scriptType: 'bash'
-    scriptLocation: 'inlineScript'
-    inlineScript: 'az group delete --name az -y'
+    scriptLocation: 'Scriptedpath'
+    Scriptedpath: 'az-vm.sh'
