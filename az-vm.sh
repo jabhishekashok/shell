@@ -28,7 +28,7 @@ for i in `seq 1  `; do
      --admin-password "india@123456"
 done
 
-for i in `seq 1 2  `; do
+for i in `seq 1  `; do
    az vm create \
      --resource-group AZ \
      --name Node$i \
