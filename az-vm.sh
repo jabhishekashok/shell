@@ -13,7 +13,7 @@ az network nsg rule create \
 --destination-address-prefixes '*' --destination-port-ranges '*' \
 --access Allow --protocol Tcp --description "Allowing ALL"
 
-for i in `seq 1  `; do
+for i in `seq 1 `; do
    az vm create \
      --resource-group AZ \
      --name Master$i \
@@ -28,7 +28,7 @@ for i in `seq 1  `; do
      --admin-password "india@123456"
 done
 
-for i in `seq 1  `; do
+for i in `seq 1 `; do
    az vm create \
      --resource-group AZ \
      --name Node$i \
