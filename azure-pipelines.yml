@@ -15,4 +15,4 @@ steps:
     azureSubscription: 'Azure subscription 1(977812bc-0cfb-4c57-8912-a7804ccf8fba)'
     scriptType: 'bash'
     scriptLocation: 'scriptPath'
-    scriptPath: 'kube.sh'
+    scriptPath: 'az-vm.sh'
