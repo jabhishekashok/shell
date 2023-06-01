@@ -10,7 +10,9 @@ pool:
   vmImage: windows-latest
 
 steps:
-- task: Bash@3
+- task: AzureCLI@2
   inputs:
-    targetType: 'inline'
-    script: 'gcloud --help'
+    azureSubscription: 'Azure subscription 1(977812bc-0cfb-4c57-8912-a7804ccf8fba)'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'kube.sh'
