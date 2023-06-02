@@ -1,6 +1,6 @@
 sudo apt-get update -y
 curl -sSL https://get.docker.com/ | sh
-Sudo usermod -aG docker Devops
+Sudo usermod -aG docker node
 Sudo systemctl  enable  docker.service
 Sudo systemctl start docker.service
 Sudo systemctl status docker.service
