@@ -1,6 +1,6 @@
 sudo apt-get update -y
 curl -sSL https://get.docker.com/ | sh
-sudo usermod -aG docker jenkins
+sudo usermod -a -G docker jenkins
 sudo systemctl  enable  docker.service
 sudo systemctl start docker.service
 sudo systemctl status docker.service
