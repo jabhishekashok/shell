@@ -32,7 +32,7 @@ for i in `seq 1 `; do
    az vm create \
      --resource-group AZ \
      --name Node$i \
-     --size Standard_B1s  \
+     --size Standard_B2s  \
      --storage-sku StandardSSD_LRS \
      --os-disk-size-gb 32 \
      --vnet-name Vnet \
